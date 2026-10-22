@@ -1,0 +1,34 @@
+
+# Visual Studio
+.vs/
+*.suo
+*.user
+*.VC.db
+*.VC.opendb
+
+# Build directories
+Debug/
+Release/
+x64/
+x86/
+build/
+out/
+
+# Intermediate files
+*.obj
+*.pdb
+*.ilk
+*.pch
+*.ipch
+*.tlog
+*.lastbuildstate
+
+# Compiled binaries
+*.dll
+*.asi
+*.exe
+
+# Temporary files
+*.log
+*.tmp
+*.bak
