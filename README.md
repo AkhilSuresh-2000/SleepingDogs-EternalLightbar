@@ -35,12 +35,22 @@ Development and testing were performed with the Steam version under Proton on Li
 ## Installation
 
 1. Back up any existing mod files you may need to restore.
-2. Install a compatible ASI loader for *Sleeping Dogs: Definitive Edition*, following that loader's own instructions.
-3. Extract the Eternal Lightbar release archive.
-4. Place the supplied `.asi` file in the game's `plugins` folder used by your ASI loader. Create that folder only if your loader expects it.
-5. Launch the game, enter an emergency vehicle, activate its emergency lights, and exit to test the effect.
+2. Download [Ultimate ASI Loader by ThirteenAG](https://github.com/ThirteenAG/Ultimate-ASI-Loader/releases).
+3. Install the 64-bit `dinput8.dll` from Ultimate ASI Loader in the main *Sleeping Dogs: Definitive Edition* game directory.
+4. Download and extract the Eternal Lightbar release archive.
+5. Place the supplied `base.asi` file inside the game's `plugins` folder. Create the folder if it does not already exist.
+6. Launch the game, enter an emergency vehicle, activate its emergency lights, and exit to test the effect.
 
-**Important:** The ASI loader is a separate dependency. This project does not currently redistribute one. If you use another ASI loader or a different folder layout, follow that loader's documentation instead.
+### Example Directory Structure
+
+```text
+SleepingDogsDefinitiveEdition/
+├── dinput8.dll
+└── plugins/
+    └── base.asi
+```
+
+**Important:** Ultimate ASI Loader is a separate dependency developed by ThirteenAG and is not included in the Eternal Lightbar release archive. Other compatible ASI loaders may work, but have not been verified for this release. Follow their respective installation instructions if using an alternative loader.
 
 ## Uninstallation
 
@@ -72,6 +82,9 @@ Special thanks to the **[SDmodding](https://github.com/SDmodding)** contributors
 
 - **[SDmodding SDK](https://github.com/SDmodding/SDK)** — development dependency and reference for game internals.
 - **[TheoryEngine](https://github.com/SDmodding/TheoryEngine)** — consulted during research into the game's architecture; no direct code reuse is claimed here.
+- Additional thanks to:
+
+    ThirteenAG — developer of Ultimate ASI Loader, used to load Eternal Lightbar into Sleeping Dogs: Definitive Edition.
 
 Eternal Lightbar was developed through reverse engineering, C++ implementation, debugging, and hands-on testing, with AI assistance during research, code development, and troubleshooting.
 
